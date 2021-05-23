@@ -14,7 +14,6 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         
-        myDB_Manager.insert(epc: "0123abcsdjfsl")
         var resultValues : [String] = []
         resultValues = myDB_Manager.read()
         for tag in resultValues{

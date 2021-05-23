@@ -22,7 +22,6 @@ class InventoryViewController: UIViewController, UITableViewDataSource, UITableV
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        myDB_Manager.insert(epc: "fajslfaksl123")
         var resultValues : [String] = []
         resultValues = myDB_Manager.read()
         for tag in resultValues{
@@ -198,10 +197,5 @@ class InventoryViewController: UIViewController, UITableViewDataSource, UITableV
         print("tags fetched")
 
 
-    }
-    func printSavedTags(){
-        for tag in savedTags{
-            print(tag.epc)
-        }
     }
 }
